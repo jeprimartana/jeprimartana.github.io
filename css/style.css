@@ -1,0 +1,101 @@
+html {
+  position: relative;
+}
+body {
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+.jumbotron {
+  height: 500px;
+  background-image: url("../img/background-header.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -100px;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border: 5px solid rgb(51, 51, 51);
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 1px 1px 10px rgb(139, 139, 139);
+}
+
+hr {
+  width: 250px;
+  border-top: 3px solid rgb(90, 90, 90);
+}
+.about {
+  width: 100%;
+  min-height: 500px;
+}
+
+.pKiri,
+.pKanan {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+.pKanan {
+  transform: translate(50px, 0);
+}
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.download a {
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.portfolio {
+  min-height: 700px;
+  background-color: #eee;
+}
+
+.portfolio .thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.portfolio .thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.contact {
+  min-height: 700px;
+}
+
+footer {
+  padding-top: 20px;
+  position: absolute;
+  buttom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  color: white;
+}
+section {
+  min-height: 420px;
+}
+
+.contact .card-body {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.contact .card-body h5 {
+  font-size: 25px;
+}
+.contact .page2 {
+  margin-top: 40px;
+}
